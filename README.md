@@ -20,7 +20,7 @@
 - [Contact](#contact)
 
 ## Introduction
-EventsWale is a user platform designed to make the organization of events such, as seminars and workshops more straightforward and hassle free for both the organizers and attendees involved in the process.It aims to address the challenges that arise during event planning and execution while enhancing efficiency throughout the experience.EventsWale enables organizers to plan and promote events while ensuring that attendees have an enjoyable time.Connecting educators with students and professionals alike fosters an environment that emphasizes growth and knowledge exchange, within a community. 
+EventsWale is an user platform designed to make the organization of events such, as seminars and workshops more straightforward and hassle free for both the organizers and attendees involved in the process.It aims to address the challenges that arise during event planning and execution while enhancing efficiency throughout the experience.EventsWale enables organizers to plan and promote events while ensuring that attendees have an enjoyable time.Connecting educators with students and professionals alike fosters an environment that emphasizes growth and knowledge exchange, within a community. 
 
 
 Managing educational events like seminars, workshops, and hackathons can be challenging for organizers and attendees alike. Organizers often struggle to promote their events, while attendees find it hard to locate events that match their interests and schedules. Furthermore, tracking attendance, accessing certificates, and building a professional profile can become disorganized.
