@@ -15,6 +15,7 @@
 -   [Main Features](#Main-Features)
 -   [Additional Features](#Additional-Features)
 -   [Technical Stack](#technical-stack)
+-   [Screenshots](#Screenshots)
 -   [Installation](#installation)
 -   [Troubleshooting](#Troubleshooting)
 -   [Contact](#contact)
@@ -55,7 +56,7 @@ Managing educational events like seminars, workshops, and hackathons can be chal
 -   **Additional Libraries**: Material-UI (and more)
 -   **Version Control**: GitHub
 
-## Screenshots
+### Screenshots
 
 ![Screenshot](images/Screenshot1.png)
 
