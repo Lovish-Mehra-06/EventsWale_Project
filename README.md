@@ -72,8 +72,8 @@ cd EventsWale
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/EventEase.git
-   cd EventEase
+   git clone https://github.com/yourusername/EventsWale.git
+   cd EventsWale
    ```
    
 ### Step 2: Set Up the Backend (Django)
