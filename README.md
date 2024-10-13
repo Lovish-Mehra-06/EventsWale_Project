@@ -177,4 +177,4 @@ For any inquiries, feel free to reach out:
 
 Lovish Mehra - lovish06mehra@gmail.com
 
-Project Link: EventsWale GitHub Repository
+Project Link: [EventsWale GitHub Repository](https://github.com/Lovish-Mehra-06/EventsWale_Project.git)
