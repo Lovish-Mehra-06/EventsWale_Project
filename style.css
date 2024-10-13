@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar styling */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Navigation list styling */
+.ullist {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    z-index: 100;
+}
+
+/* Style for buttons in the nav */
+.ullist button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Hover effect for buttons with glowing background */
+.ullist button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #007bff;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+}
+
+/* Style for the search icon */
+.search-icon {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    stroke: antiquewhite;
+}
+
+/* Rotate search icon on hover */
+.search-icon:hover {
+    transform: rotate(20deg);
+}
+
+/* Style for the search bar */
+.search-bar {
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 200px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    margin-left: 10px;
+}
+
+/* When the search bar is visible */
+.search-bar.show {
+    display: block;
+    opacity: 1;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.eventswale{
+    padding: 100px 100px 0px 100px;
+    width: 60%;
+    height:70%;
+}
+h1{
+    text-align: center;
+    display: grid;
+    padding-top: 220px;
+    padding-right: 100px;
+    padding-left: 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-family: cursive;
+    color:aliceblue;
+
+}
+/* .const{
+    display: flex;
+    justify-content: center;
+} */
+#getstarted{
+    display: flex;
+    padding: 10px 17px 27px 17px;
+    justify-content: center;
+    font-size: 34px;
+    background-color: #000;
+    box-shadow:0 0 20px rgb(230, 241, 30);
+    text-shadow: 0 0 0 10px yellow;
+    color: #cedb14;
+    border-radius: 150px;
+    margin: 15px 35px 15px 200px;
+    height: 54px;
+    width: 50%;
+}
