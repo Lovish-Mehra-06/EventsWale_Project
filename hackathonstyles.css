@@ -5,9 +5,20 @@
 }
 a{
     text-decoration: none;
+    
     color: white;
 }
 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  /* This is key - it keeps the background fixed while scrolling */
+    color: #FFFFFF;
+    animation: fadeIn 0.5s forwards;
+}
 .container {
 	height: 100vh;
 	background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
@@ -17,6 +28,31 @@ a{
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* This keeps the background fixed */
+    color: #FFFFFF;
+    animation: fadeIn 0.5s forwards;
+    min-height: 100vh; /* Ensures the body is at least the height of the viewport */
+    overflow-y: scroll; /* Allows scrolling */
+}
+
+.container {
+    min-height: 100vh;
+    color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    background: transparent; /* Transparent so the fixed background shows */
+    overflow-y: scroll; /* Enables scrolling inside the container */
+}
+
+
+
 /* Navigation bar styling */
 .nav {
 	display: flex;
@@ -25,6 +61,7 @@ a{
 	background-color: rgba(0, 0, 0, 0.6);
 	padding: 10px;
 	border-radius: 10px;
+    position: sticky;
 }
 
 /* Navigation list styling */
@@ -96,14 +133,7 @@ a{
 }
 
 
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-image: url('/mnt/data/image.png'); /* Background image */
-    background-size: cover;
-    color: #FFFFFF;
-    animation: fadeIn 0.5s forwards;
-}
+
 
 .fade-out {
     animation: fadeOut 0.5s forwards;
@@ -130,14 +160,7 @@ body {
     color: #FF69B4; /* Neon Pink */
 }
 
-.container{
-    height: 100vh;
-	background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: antiquewhite;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
 
 main {
     display: flex;
@@ -147,11 +170,16 @@ main {
 /* Sidebar styles */
 aside {
     width: 250px;
+    height: 600px;
     background-color: rgba(46, 0, 71, 0.8); /* Transparent background */
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 10px; /* Sticky position with 10px from the top */
 }
+
 
 aside h2 {
     color: #FF588D; /* Pink */
@@ -275,7 +303,7 @@ footer {
     height: 50px;
     width: 100vw;
     color: #FFFFFF;
-    position: absolute;
+    position:static;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -284,6 +312,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     font-size: 14px;
-    bottom: 0;
+    bottom: 0px;
     border-top: 1px solid #333;
 }
