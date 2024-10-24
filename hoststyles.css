@@ -5,25 +5,137 @@
 	font-family: "Arial", sans-serif;
 }
 
-body {
-	background-image: url("images/background.avif"); /* Ensure this path is correct */
-	background-size: cover; /* Cover the whole screen */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Prevent tiling */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+    color: white;
 }
 
-.container {
-	background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
-	padding: 30px;
+
+
+
+
+/* Navigation bar styling */
+/* .nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
 	border-radius: 10px;
-	box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-	width: 600px; /* Increased width for landscape layout */
-	max-height: 90vh; /* Limit height to avoid cutting off */
-	overflow-y: auto; /* Allow vertical scrolling */
+    position: sticky;
+} */
+
+/* Navigation list styling */
+.ullist {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	z-index: 100;
+}
+
+/* Style for buttons in the nav */
+.ullist button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease,
+		box-shadow 0.3s ease;
+	color: antiquewhite;
+	padding: 5px 10px;
+	border-radius: 5px;
+	position: relative;
+}
+
+/* Hover effect for buttons with glowing background */
+.ullist button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #ececff;
+	box-shadow: 0 0 10px #7aa6d5, 0 0 20px #7baadc, 0 0 30px #86b9f0;
+}
+
+/* Style for the search icon */
+.search-icon {
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	margin-left: 10px;
+	transition: transform 0.2s ease;
+	stroke: antiquewhite;
+}
+
+/* Rotate search icon on hover */
+.search-icon:hover {
+	transform: rotate(20deg);
+}
+
+/* Style for the search bar */
+.search-bar {
+	padding: 7px 12px;
+	border-radius: 20px;
+	border: 1px solid #ddd;
+	width: 200px;
+	transition: width 0.3s ease, opacity 0.3s ease;
+	display: none; /* Initially hidden */
+	opacity: 0;
+	background: #fff;
+	color: #000;
+	margin-left: 10px;
+}
+
+/* When the search bar is visible */
+.search-bar.show {
+	display: block;
+	opacity: 1;
+}
+
+
+
+body {
+    background-image: url("images/background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add these styles for the main content */
+.container {
+    margin: 20px auto;  /* Centers horizontally with auto margins */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Update the nav styles */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0 10px;  /* Add some margin on the sides */
 }
 
 h2 {
