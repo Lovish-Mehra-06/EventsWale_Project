@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seminars - Events Wale</title>
-    <link rel="stylesheet" href="Seminarsstyles.css">
+    <title>Workshops - Events Wale</title>
+    <link rel="stylesheet" href="Workshopsstyles.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -20,8 +20,6 @@
                         <li>
                             <button>
                                 Host
-                                <img style="height: 18px; width: 18px; margin-left: 5px;"
-                                    src="images/pluss-modified.png" alt="Plus Icon" />
                             </button>
                         </li>
                         <li>
@@ -35,8 +33,10 @@
                         </li>
                         <li>
                             <button>
-                                <img style="height: 30px; width: 30px" src="images/notify-modified.png"
-                                    alt="Notification" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                </svg>
                             </button>
                         </li>
                         <li><button>Sign in</button></li>
@@ -69,11 +69,11 @@
                 <div class="filter-section">
                     <label>Category:</label>
                     <select class="styled-select">
-                        <option>Technology</option>
-                        <option>Business</option>
-                        <option>Healthcare</option>
-                        <option>Education</option>
-                        <option>Research</option>
+                        <option>Web Development</option>
+                        <option>Data Science</option>
+                        <option>Cloud Computing</option>
+                        <option>Digital Marketing</option>
+                        <option>Design</option>
                         <option>All</option>
                     </select>
                 </div>
@@ -113,65 +113,65 @@
             </aside>
 
             <section class="seminar-cards">
-                <h2 class="section-title"><u>Upcoming Seminars</u></h2>
+                <h2 class="section-title"><u>Upcoming Workshops</u></h2>
 
-                <!-- Seminar Card 1 -->
+                <!-- Workshop Card 1 -->
                 <div class="card">
-                    <h3>Future of AI in Healthcare</h3>
-                    <p><strong>Date:</strong> 30th Oct 2024</p>
-                    <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
-                    <p><strong>Location:</strong> Virtual Event</p>
-                    <p><strong>Speaker:</strong> Dr. Sarah Johnson, AI Research Lead at HealthTech</p>
-                    <p><strong>Registration Fee:</strong> Free</p>
-                    <p><strong>Language:</strong> English</p>
+                    <h3>Full Stack Web Development Bootcamp</h3>
+                    <p><strong>Date:</strong> 1st Nov - 15th Nov 2024</p>
+                    <p><strong>Time:</strong> 6:00 PM - 9:00 PM (Weekdays)</p>
+                    <p><strong>Location:</strong> Online (Zoom)</p>
+                    <p><strong>Instructor:</strong> John Smith, Senior Developer at Tech Corp</p>
+                    <p><strong>Registration Fee:</strong> ₹4999</p>
+                    <p><strong>Includes:</strong> Certificate, Project Review, Job Support</p>
                     <button class="cta">Register Now</button>
                 </div>
 
-                <!-- Seminar Card 2 -->
+                <!-- Workshop Card 2 -->
                 <div class="card">
-                    <h3>Sustainable Business Practices</h3>
-                    <p><strong>Date:</strong> 5th Nov 2024</p>
-                    <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
-                    <p><strong>Location:</strong> Hybrid (Mumbai & Online)</p>
-                    <p><strong>Speaker:</strong> Prof. Michael Chen, Business Sustainability Expert</p>
-                    <p><strong>Registration Fee:</strong> ₹499</p>
-                    <p><strong>Language:</strong> English & Hindi</p>
+                    <h3>UI/UX Design Masterclass</h3>
+                    <p><strong>Date:</strong> 7th Nov 2024</p>
+                    <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
+                    <p><strong>Location:</strong> Delhi Design Hub</p>
+                    <p><strong>Instructor:</strong> Maya Patel, UX Lead at DesignFirst</p>
+                    <p><strong>Registration Fee:</strong> ₹1999</p>
+                    <p><strong>Tools Covered:</strong> Figma, Adobe XD</p>
                     <button class="cta">Register Now</button>
                 </div>
 
-                <!-- Seminar Card 3 -->
+                <!-- Workshop Card 3 -->
                 <div class="card">
-                    <h3>Research Methodology Workshop</h3>
-                    <p><strong>Date:</strong> 12th Nov 2024</p>
-                    <p><strong>Time:</strong> 11:00 AM - 4:00 PM</p>
-                    <p><strong>Location:</strong> SRMIST KTR Campus</p>
-                    <p><strong>Speaker:</strong> Dr. Rajesh Kumar, Research Director</p>
-                    <p><strong>Registration Fee:</strong> ₹299 (Students)</p>
-                    <p><strong>Certificate:</strong> Yes</p>
+                    <h3>Data Science with Python</h3>
+                    <p><strong>Date:</strong> 15th Nov 2024</p>
+                    <p><strong>Time:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Location:</strong> Hybrid (Bangalore & Online)</p>
+                    <p><strong>Instructor:</strong> Dr. Robert Lee, Data Scientist</p>
+                    <p><strong>Registration Fee:</strong> ₹2499</p>
+                    <p><strong>Prerequisites:</strong> Basic Python Knowledge</p>
                     <button class="cta">Learn More</button>
                 </div>
 
-                <!-- Seminar Card 4 -->
+                <!-- Workshop Card 4 -->
                 <div class="card">
-                    <h3>Cybersecurity in Digital Age</h3>
-                    <p><strong>Date:</strong> 18th Nov 2024</p>
-                    <p><strong>Time:</strong> 3:00 PM - 6:00 PM</p>
-                    <p><strong>Location:</strong> Online</p>
-                    <p><strong>Speaker:</strong> Mr. Alex Thompson, Security Expert</p>
-                    <p><strong>Registration Fee:</strong> ₹799</p>
-                    <p><strong>Includes:</strong> E-certificate, Resource Materials</p>
+                    <h3>Digital Marketing Workshop</h3>
+                    <p><strong>Date:</strong> 20th Nov 2024</p>
+                    <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+                    <p><strong>Location:</strong> Mumbai Central Hub</p>
+                    <p><strong>Instructor:</strong> Priya Desai, Marketing Expert</p>
+                    <p><strong>Registration Fee:</strong> Free</p>
+                    <p><strong>Limited Seats:</strong> First 50 Registrations</p>
                     <button class="cta">Register Now</button>
                 </div>
 
-                <!-- Seminar Card 5 -->
+                <!-- Workshop Card 5 -->
                 <div class="card">
-                    <h3>Future of Education Tech</h3>
-                    <p><strong>Date:</strong> 25th Nov 2024</p>
-                    <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
-                    <p><strong>Location:</strong> Bangalore</p>
-                    <p><strong>Speaker:</strong> Ms. Priya Sharma, EdTech Innovator</p>
-                    <p><strong>Registration Fee:</strong> Free</p>
-                    <p><strong>Limited Seats:</strong> 100</p>
+                    <h3>Cloud Computing with AWS</h3>
+                    <p><strong>Date:</strong> 28th Nov 2024</p>
+                    <p><strong>Time:</strong> 11:00 AM - 4:00 PM</p>
+                    <p><strong>Location:</strong> Online</p>
+                    <p><strong>Instructor:</strong> Mark Wilson, AWS Solutions Architect</p>
+                    <p><strong>Registration Fee:</strong> ₹3499</p>
+                    <p><strong>Includes:</strong> AWS Practice Credits</p>
                     <button class="cta">Join Waitlist</button>
                 </div>
             </section>
