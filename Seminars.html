@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminars - Events Wale</title>
+    <link rel="stylesheet" href="Seminarsstyles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav">
+                <div class="profile">
+                    <ul class="ullist">
+                        <li><button><a href="index.html">Home</a></button></li>
+                        <li><button><a href="Hackathons.html">Hackathon</a></button></li>
+                        <li><button><a href="Seminars.html">Seminar</a></button></li>
+                        <li><button><a href="workshop.html">Workshop</a></button></li>
+                        <li>
+                            <button>
+                                Host
+                                <img style="height: 18px; width: 18px; margin-left: 5px;"
+                                    src="images/pluss-modified.png" alt="Plus Icon" />
+                            </button>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="search-icon" onclick="toggleSearchBar()">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <input type="text" placeholder="Search..." class="search-bar" id="searchBar" />
+                        </li>
+                        <li>
+                            <button>
+                                <img style="height: 30px; width: 30px" src="images/notify-modified.png"
+                                    alt="Notification" />
+                            </button>
+                        </li>
+                        <li><button>Sign in</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <aside>
+                <h2>Filters</h2>
+                <div class="filter-section">
+                    <label>Dates:</label>
+                    <select class="styled-select">
+                        <option>This week</option>
+                        <option>This month</option>
+                        <option>Next month</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <label>Location:</label>
+                    <select class="styled-select">
+                        <option>Local</option>
+                        <option>National</option>
+                        <option>International</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <label>Category:</label>
+                    <select class="styled-select">
+                        <option>Technology</option>
+                        <option>Business</option>
+                        <option>Healthcare</option>
+                        <option>Education</option>
+                        <option>Research</option>
+                        <option>All</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <label>Entry Fee:</label>
+                    <label class="radio-container">
+                        Free
+                        <input type="radio" name="fee" value="free">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        Paid
+                        <input type="radio" name="fee" value="paid">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="filter-section">
+                    <label>Mode:</label>
+                    <label class="radio-container">
+                        In-person
+                        <input type="radio" name="mode" value="in-person">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        Online
+                        <input type="radio" name="mode" value="online">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">
+                        Hybrid
+                        <input type="radio" name="mode" value="hybrid">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </aside>
+
+            <section class="seminar-cards">
+                <h2 class="section-title"><u>Upcoming Seminars</u></h2>
+
+                <!-- Seminar Card 1 -->
+                <div class="card">
+                    <h3>Future of AI in Healthcare</h3>
+                    <p><strong>Date:</strong> 30th Oct 2024</p>
+                    <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+                    <p><strong>Location:</strong> Virtual Event</p>
+                    <p><strong>Speaker:</strong> Dr. Sarah Johnson, AI Research Lead at HealthTech</p>
+                    <p><strong>Registration Fee:</strong> Free</p>
+                    <p><strong>Language:</strong> English</p>
+                    <button class="cta">Register Now</button>
+                </div>
+
+                <!-- Seminar Card 2 -->
+                <div class="card">
+                    <h3>Sustainable Business Practices</h3>
+                    <p><strong>Date:</strong> 5th Nov 2024</p>
+                    <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                    <p><strong>Location:</strong> Hybrid (Mumbai & Online)</p>
+                    <p><strong>Speaker:</strong> Prof. Michael Chen, Business Sustainability Expert</p>
+                    <p><strong>Registration Fee:</strong> ₹499</p>
+                    <p><strong>Language:</strong> English & Hindi</p>
+                    <button class="cta">Register Now</button>
+                </div>
+
+                <!-- Seminar Card 3 -->
+                <div class="card">
+                    <h3>Research Methodology Workshop</h3>
+                    <p><strong>Date:</strong> 12th Nov 2024</p>
+                    <p><strong>Time:</strong> 11:00 AM - 4:00 PM</p>
+                    <p><strong>Location:</strong> SRMIST KTR Campus</p>
+                    <p><strong>Speaker:</strong> Dr. Rajesh Kumar, Research Director</p>
+                    <p><strong>Registration Fee:</strong> ₹299 (Students)</p>
+                    <p><strong>Certificate:</strong> Yes</p>
+                    <button class="cta">Learn More</button>
+                </div>
+
+                <!-- Seminar Card 4 -->
+                <div class="card">
+                    <h3>Cybersecurity in Digital Age</h3>
+                    <p><strong>Date:</strong> 18th Nov 2024</p>
+                    <p><strong>Time:</strong> 3:00 PM - 6:00 PM</p>
+                    <p><strong>Location:</strong> Online</p>
+                    <p><strong>Speaker:</strong> Mr. Alex Thompson, Security Expert</p>
+                    <p><strong>Registration Fee:</strong> ₹799</p>
+                    <p><strong>Includes:</strong> E-certificate, Resource Materials</p>
+                    <button class="cta">Register Now</button>
+                </div>
+
+                <!-- Seminar Card 5 -->
+                <div class="card">
+                    <h3>Future of Education Tech</h3>
+                    <p><strong>Date:</strong> 25th Nov 2024</p>
+                    <p><strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                    <p><strong>Location:</strong> Bangalore</p>
+                    <p><strong>Speaker:</strong> Ms. Priya Sharma, EdTech Innovator</p>
+                    <p><strong>Registration Fee:</strong> Free</p>
+                    <p><strong>Limited Seats:</strong> 100</p>
+                    <button class="cta">Join Waitlist</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Events Wale - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.getElementById("searchBar");
+            searchBar.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    animation: fadeIn 0.5s forwards;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.container {
+    min-height: 100vh;
+    color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: transparent;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+}
+
+.ullist {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.ullist button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.ullist button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ececff;
+    box-shadow: 0 0 10px #7aa6d5, 0 0 20px #7baadc, 0 0 30px #86b9f0;
+}
+
+/* Search Bar Styles */
+.search-icon {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    stroke: antiquewhite;
+}
+
+.search-icon:hover {
+    transform: rotate(20deg);
+}
+
+.search-bar {
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 200px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    display: none;
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    margin-left: 10px;
+}
+
+.search-bar.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 250px;
+    background-color: rgba(46, 0, 71, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+aside h2 {
+    color: #FF588D;
+    margin-bottom: 1.5rem;
+}
+
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+/* Select Styles */
+.styled-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.styled-select:hover {
+    background-color: #FF588D;
+}
+
+/* Radio Button Styles */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #FF69B4;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #FF588D;
+}
+
+/* Seminar Cards Section */
+.seminar-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    color: wheat;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card {
+    background-color: rgba(46, 0, 71, 0.85);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #FF69B4;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.card strong {
+    color: #FFB07C;
+}
+
+.card .cta {
+    padding: 0.6rem 1.2rem;
+    background-color: #FF588D; /* Pink Button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background 0.3s ease;
+}
+
+.card .cta:hover {
+    background-color: #FFB07C; /* Orange */
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+footer {
+    height: 50px;
+    width: 100vw;
+    color: #FFFFFF;
+    position:static;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 14px;
+    bottom: 0px;
+    border-top: 1px solid #333;
+}
