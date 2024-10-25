@@ -1,103 +1,123 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-a{
+
+html {
+    height: 100%;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
+
+body {
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #FFFFFF;
+    animation: fadeIn 0.5s forwards;
+    padding-bottom: 50px; /* Height of the footer */
+    position: relative;
+    overflow-y: auto;
+}
+
 .container {
-	height: 100vh;
-	background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: antiquewhite;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    color: antiquewhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation bar styling */
 .nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding: 10px;
-	border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* Navigation list styling */
 .ullist {
-	list-style-type: none;
-	display: flex;
-	align-items: center;
-	gap: 15px;
-	padding: 0;
-	margin: 0;
-	font-size: 18px;
-	z-index: 100;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    z-index: 100;
 }
 
 /* Style for buttons in the nav */
 .ullist button {
-	background: none;
-	border: none;
-	font-size: 16px;
-	cursor: pointer;
-	transition: color 0.3s ease, background-color 0.3s ease,
-		box-shadow 0.3s ease;
-	color: antiquewhite;
-	padding: 5px 10px;
-	border-radius: 5px;
-	position: relative;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease,
+        box-shadow 0.3s ease;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
 }
 
 /* Hover effect for buttons with glowing background */
 .ullist button:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	color: #ececff;
-	box-shadow: 0 0 10px #7aa6d5, 0 0 20px #7baadc, 0 0 30px #86b9f0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ececff;
+    box-shadow: 0 0 10px #7aa6d5, 0 0 20px #7baadc, 0 0 30px #86b9f0;
 }
 
 /* Style for the search icon */
 .search-icon {
-	cursor: pointer;
-	height: 24px;
-	width: 24px;
-	margin-left: 10px;
-	transition: transform 0.2s ease;
-	stroke: antiquewhite;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    stroke: antiquewhite;
 }
 
 /* Rotate search icon on hover */
 .search-icon:hover {
-	transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 /* Style for the search bar */
 .search-bar {
-	padding: 7px 12px;
-	border-radius: 20px;
-	border: 1px solid #ddd;
-	width: 200px;
-	transition: width 0.3s ease, opacity 0.3s ease;
-	display: none; /* Initially hidden */
-	opacity: 0;
-	background: #fff;
-	color: #000;
-	margin-left: 10px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 200px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    display: none; /* Initially hidden */
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    margin-left: 10px;
 }
 
 /* When the search bar is visible */
 .search-bar.show {
-	display: block;
-	opacity: 1;
+    display: block;
+    opacity: 1;
 }
+
 .body {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	animation: fadeIn 0.5s forwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: fadeIn 0.5s forwards;
 }
 
 .fade-out {
@@ -105,70 +125,176 @@ a{
 }
 
 .eventswale {
-	padding: 100px 100px 0px 100px;
-	width: 60%;
-	height: 70%;
+    padding: 100px 100px 0px 100px;
+    width: 60%;
+    height: 70%;
 }
+
 h1 {
-	text-align: center;
-	display: grid;
-	padding-top: 220px;
-	padding-right: 120px;
-	padding-left: 20px;
-	grid-template-rows: 1fr;
-	align-items: center;
-	font-family: cursive;
-	color: aliceblue;
+    text-align: center;
+    display: grid;
+    padding-top: 220px;
+    padding-right: 120px;
+    padding-left: 20px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-family: cursive;
+    color: aliceblue;
 }
+
 h2 {
-	text-align: center;
-	display: grid;
-	padding-top: 30px;
-	padding-right: 0;
-	padding-left: 25%;
-	grid-template-rows: 1fr;
-	align-items: center;
-	font-family: cursive;
-	color: aliceblue;
+    text-align: center;
+    display: grid;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 25%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-family: cursive;
+    color: aliceblue;
 }
-/* .const{
-    display: flex;
-    justify-content: center;
-} */
+
 #getstarted {
     display: flex;
-    padding: 12px 5%; /* Use percentage for horizontal padding */
+    padding: 12px 5%;
     justify-content: center;
-    align-items: center; /* Center text vertically */
-    font-size: 2.5vw; /* Use viewport width for responsive font size */
-    background-image: url("images/istockphot3.jpg"); /* Ensure correct path */
-    background-size: cover; /* Cover the entire button */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling of the image */
-    border: none; /* No border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    color: #ffffff; /* Text color */
-    border-radius: 27px; /* Slightly rounded corners for a modern look */
-    margin: 15px auto; /* Center the button with auto margin */
-    height: 50px; /* Maintain height for better visibility */
+    align-items: center;
+    font-size: 2.5vw;
+    background-image: url("images/istockphot3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border-radius: 27px;
+    margin: 15px auto;
+    height: 50px;
     width: 80%;
-    max-width: 400px; /* Limit maximum width */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    max-width: 400px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #getstarted:hover {
-    background-color: rgba(49, 34, 34, 0.3); /* More subtle dark overlay on hover */
-    color: #3e1c5c; /* Gold text on hover */
-    font-weight: bold; /* Make text bold on hover */
+    background-color: rgba(49, 34, 34, 0.3);
+    color: #3e1c5c;
+    font-weight: bold;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
-                 0 0 10px rgba(255, 255, 255, 0.5); /* Add glow effect */
+                 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Additional Media Queries for further responsiveness */
+footer {
+    height: 50px;
+    width: 100%;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    z-index: 1000;
+}
+
+.cards-container {
+    padding-top: 80px;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-scroll {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    animation: scroll 30s linear infinite;
+    position: absolute;
+}
+
+.event-card {
+    min-width: 280px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h3 {
+    color: rgb(244, 228, 198);
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: rgb(239, 228, 210);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.know-more-btn {
+    background: rgba(221, 223, 145, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.articles-section {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+}
+
+.article-card h3 {
+    color: rgb(240, 222, 189);
+    margin-bottom: 15px;
+}
+
+.article-card p {
+    color: rgb(250, 237, 215);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
 @media (max-width: 600px) {
     #getstarted {
-        font-size: 4vw; /* Increase font size on smaller screens */
-        height: 45px; /* Slightly reduce height for small screens */
+        font-size: 4vw;
+        height: 45px;
     }
 }
 
@@ -181,19 +307,18 @@ h2 {
     from { opacity: 1; }
     to { opacity: 0; }
 }
-footer {
-    height: 50px;
-    width: 100vw;
-    color: #FFFFFF;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    font-size: 14px;
-    bottom: 0;
-    border-top: 1px solid #333;
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.Devider{
+    height: 5px;
+    background-color: black;
+    opacity: 0.1;
 }

@@ -15,7 +15,7 @@
 						<ul class="ullist">
 							<li><button><a href="index.html">Home</a></button></li>
 							<li><button><a href="Hackathons.html">Hackathon</a></button></li>
-							<li><button><a href="Seminars.html">Seminar</a></button></li>	
+							<li><button><a href="Seminars.html">Seminar</a></button></li>
 							<li><button><a href="workshop.html">Workshop</a></button></li>
 							<li>
 								<button>
@@ -79,19 +79,118 @@
 						"Ignite Your Passion, Transform Your Future. Dive Into a
 						Universe of Limitless Opportunities.""
 					</h1>
-					<h2><button id="getstarted">Get Started &gt;</button></h2>
+					<h2><a href="#Getstarted"><button id="getstarted">Get Started &gt;</button></a></h2>
 				</div>
 			</main>
+			
+		</div>
+		<div class="Devider">
+
+		</div>
+		<section id="Getstarted" class="cards-container">
+            <div class="cards-scroll">
+                <div class="event-card">
+                    <div>
+                        <h3>AI Innovation Hackathon</h3>
+                        <p>Join us for a 48-hour coding challenge focused on AI solutions.</p>
+                        <p>Date: Nov 15-17, 2024</p>
+                    </div>
+                    <button class="know-more-btn" onclick="window.location.href='Hackathons.html'">Know More</button>
+                </div>
+
+                <div class="event-card">
+                    <div>
+                        <h3>Web3 Development Seminar</h3>
+                        <p>Learn about blockchain and decentralized applications.</p>
+                        <p>Date: Dec 1, 2024</p>
+                    </div>
+                    <button class="know-more-btn" onclick="window.location.href='Seminars.html'">Know More</button>
+                </div>
+
+                <div class="event-card">
+                    <div>
+                        <h3>Cloud Computing Workshop</h3>
+                        <p>Hands-on experience with AWS and Azure services.</p>
+                        <p>Date: Dec 10, 2024</p>
+                    </div>
+                    <button class="know-more-btn" onclick="window.location.href='workshop.html'">Know More</button>
+                </div>
+
+                <!-- Duplicate cards for continuous scroll -->
+					<div class="event-card">
+						<div>
+							<h3>AI Innovation Hackathon</h3>
+							<p>Join us for a 48-hour coding challenge focused on AI solutions.</p>
+							<p>Date: Nov 15-17, 2024</p>
+						</div>
+						<button class="know-more-btn" onclick="window.location.href='Hackathons.html'">Know More</button>
+					</div>
+
+					<div class="event-card">
+						<div>
+							<h3>Web3 Development Seminar</h3>
+							<p>Learn about blockchain and decentralized applications.</p>
+							<p>Date: Dec 1, 2024</p>
+						</div>
+						<button class="know-more-btn" onclick="window.location.href='Seminars.html'">Know More</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="articles-section">
+				<div class="article-card">
+					<div>
+						<h3>The Future of AI in Tech Industry</h3>
+						<p>Explore how artificial intelligence is reshaping the technology landscape and creating new opportunities for developers.</p>
+					</div>
+					<button class="know-more-btn">Read More</button>
+				</div>
+
+				<div class="article-card">
+					<div>
+						<h3>Getting Started with Hackathons</h3>
+						<p>A comprehensive guide for beginners on how to prepare and excel in their first hackathon experience.</p>
+					</div>
+					<button class="know-more-btn">Read More</button>
+				</div>
+
+				<div class="article-card">
+					<div>
+						<h3>Top Tech Workshops of 2024</h3>
+						<p>Discover the most impactful and innovative technology workshops happening this year.</p>
+					</div>
+					<button class="know-more-btn">Read More</button>
+				</div>
+			</section>
+
 			<footer>
 				<p>© 2024 Events Wale - All Rights Reserved</p>
 			</footer>
 		</div>
+
+		
 
 		<script>
 			function toggleSearchBar() {
 				const searchBar = document.getElementById("searchBar");
 				searchBar.classList.toggle("show");
 			}
+
+			// Clone cards for infinite scroll
+			const cardsScroll = document.querySelector('.cards-scroll');
+			const cards = document.querySelectorAll('.event-card');
+			
+			cards.forEach(card => {
+				const clone = card.cloneNode(true);
+				cardsScroll.appendChild(clone);
+			});
 		</script>
+
+			<script>
+				function toggleSearchBar() {
+					const searchBar = document.getElementById("searchBar");
+					searchBar.classList.toggle("show");
+				}
+			</script>
 	</body>
 </html>
