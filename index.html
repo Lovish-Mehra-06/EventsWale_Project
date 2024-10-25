@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+<<<<<<< HEAD
 	<body>
 		<div class="container">
 			<header>
@@ -86,6 +87,150 @@
 				<p>© 2024 Events Wale - All Rights Reserved</p>
 			</footer>
 		</div>
+=======
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav">
+          <div class="profile">
+            <ul class="ullist">
+              <li>
+                <button><a href="index.html">Home</a></button>
+              </li>
+              <li>
+                <button><a href="Hackathons.html">Hackathon</a></button>
+              </li>
+              <li>
+                <button><a href="Seminars.html">Seminar</a></button>
+              </li>
+              <li>
+                <button><a href="workshop.html">Workshop</a></button>
+              </li>
+              <li>
+                <button>
+                  <a href="host.html">
+                    Host
+                    <img
+                      style="height: 18px; width: 18px; margin-left: 5px"
+                      src="images/pluss-modified.png"
+                      alt="Plus Icon"
+                  /></a>
+                </button>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="search-icon"
+                  onclick="toggleSearchBar()"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="search-bar"
+                  id="searchBar"
+                />
+              </li>
+              <li>
+                <button>
+                  <img
+                    style="height: 30px; width: 30px"
+                    src="images/notify-modified.png"
+                    alt="Notification"
+                  />
+                </button>
+              </li>
+              <li onclick="toggleLogin()"><button>Sign in</button></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="body">
+        <div class="eventswale">
+          <img src="images/𝐸𝓋𝑒𝓃𝓉-removebg-preview.png" alt="" />
+        </div>
+        <div>
+          <h1>
+            "Ignite Your Passion, Transform Your Future. Dive Into a Universe of
+            Limitless Opportunities.""
+          </h1>
+          <h2><button id="getstarted">Get Started &gt;</button></h2>
+        </div>
+      </main>
+      <!--login page-->
+      <div class="loginpage" id="loginpage">
+        <div class="login-box">
+          <div class="login-header">
+            <img src="images/profile.png" alt="profile" class="profileimg" />
+            <header>Login</header>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Full name"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Gender"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="forgot">
+            <section>
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </section>
+            <section>
+              <a href="#">Forgot password</a>
+            </section>
+          </div>
+          <div class="input-submit" id="submit" onclick="toggleSignup()">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Sign In</label>
+          </div>
+        </div>
+      </div>
+      <!--login page-->
+      <footer>
+        <p>© 2024 Events Wale - All Rights Reserved</p>
+      </footer>
+    </div>
+>>>>>>> de8b72c4bc4d8524d795a235865b3f88b004591c
 
 		<script>
 			function toggleSearchBar() {
