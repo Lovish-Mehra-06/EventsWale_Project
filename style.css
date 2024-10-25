@@ -225,6 +225,9 @@ footer {
   font-family: "Poppins", sans-serif;
   position: absolute;
 }
+.profileimg {
+  width: 50px;
+}
 .login-box {
   display: flex;
   justify-content: center;
@@ -282,7 +285,7 @@ a:hover {
   text-decoration: underline;
 }
 section a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .input-submit {
   position: relative;
