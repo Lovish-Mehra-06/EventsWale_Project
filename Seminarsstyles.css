@@ -82,6 +82,10 @@ body {
 .search-icon:hover {
     transform: rotate(20deg);
 }
+.card:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}
 
 .search-bar {
     padding: 7px 12px;
