@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-attachment: fixed; /* This keeps the background fixed */
     color: #FFFFFF;
-    animation: fadeIn 0.5s forwards;
+    
     min-height: 100vh; /* Ensures the body is at least the height of the viewport */
     overflow-y: scroll; /* Allows scrolling */
 }
@@ -134,10 +134,22 @@ body {
 
 
 
-
+.fade-in{
+    animation: fadeIn 0.5s forwards;
+}
 .fade-out {
     animation: fadeOut 0.5s forwards;
 }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 
 .icons {
     display: flex;
@@ -290,15 +302,7 @@ aside h2 {
     background-color: #FFB07C; /* Orange */
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
 footer {
     height: 50px;
     width: 100vw;
