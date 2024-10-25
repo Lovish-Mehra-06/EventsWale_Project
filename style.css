@@ -16,13 +16,13 @@ a {
 
 body {
   min-height: 100vh;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-image: url(images/dark-purple-background-black-magenta-plum-colors-gradient-with-grain-texture-effect-abstract-web-banner-design_284753-2283.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  color: #FFFFFF;
+  color: #ffffff;
   animation: fadeIn 0.5s forwards;
   padding-bottom: 50px; /* Height of the footer */
   position: relative;
@@ -63,8 +63,7 @@ body {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s ease,
-      box-shadow 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   color: antiquewhite;
   padding: 5px 10px;
   border-radius: 5px;
@@ -180,13 +179,13 @@ h2 {
   color: #3e1c5c;
   font-weight: bold;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.8),
-               0 0 10px rgba(255, 255, 255, 0.5);
+    0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 footer {
   height: 50px;
   width: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -293,32 +292,153 @@ footer {
 
 @media (max-width: 600px) {
   #getstarted {
-      font-size: 4vw;
-      height: 45px;
+    font-size: 4vw;
+    height: 45px;
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
-.Devider{
+.Devider {
   height: 5px;
   background-color: black;
   opacity: 0.1;
 }
+
+/*LOGINNNN*/
+.loginpage {
+  top: 0;
+  left: 35vw;
+  top: 20vh;
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+}
+.profileimg {
+  width: 50px;
+}
+.login-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 440px;
+  height: 480px;
+  padding: 30px;
+}
+.login-header {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+.login-header header {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.input-box .input-field {
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  padding: 0 25px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: 0.3s;
+}
+::placeholder {
+  font-weight: 500;
+  color: #222;
+}
+.input-field:focus {
+  width: 105%;
+}
+.forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+section {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+#check {
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+section a {
+  color: rgb(255, 255, 255);
+}
+.input-submit {
+  position: relative;
+}
+.submit-btn {
+  width: 100%;
+  height: 60px;
+  background: #222;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.input-submit label {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: #000;
+  transform: scale(1.05, 1);
+}
+.sign-up-link {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.sign-up-link a {
+  color: #000;
+  font-weight: 600;
+}
+/*LOGIN PAGE STYLING END*/

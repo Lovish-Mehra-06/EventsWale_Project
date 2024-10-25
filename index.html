@@ -65,7 +65,7 @@
 										alt="Notification" />
 								</button>
 							</li>
-							<li><button>Sign in</button></li>
+							<li onclick="toggleLogin()"><button>Sign in</button></li>
 						</ul>
 					</div>
 				</div>
@@ -162,6 +162,66 @@
 					<button class="know-more-btn">Read More</button>
 				</div>
 			</section>
+			
+      <!--login page-->
+      <div class="loginpage" id="loginpage">
+        <div class="login-box">
+          <div class="login-header">
+            <img src="images/profile.png" alt="profile" class="profileimg" />
+            <header>Login</header>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Full name"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Gender"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="forgot">
+            <section>
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </section>
+            <section>
+              <a href="#">Forgot password</a>
+            </section>
+          </div>
+          <div class="input-submit" id="submit" onclick="toggleSignup()">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Sign In</label>
+          </div>
+        </div>
+      </div>
+      <!--login page-->
 
 			<footer>
 				<p>© 2024 Events Wale - All Rights Reserved</p>
@@ -191,6 +251,17 @@
 					const searchBar = document.getElementById("searchBar");
 					searchBar.classList.toggle("show");
 				}
+				
+      //for llogin page
+      function toggleLogin() {
+        const loginpage = document.getElementById("loginpage");
+        loginpage.style.display = "block";
+      }
+      function toggleSignup() {
+        const loginpage = document.getElementById("loginpage");
+        loginpage.style.display = "none";
+      }
+	  //for login page
 			</script>
 	</body>
 </html>
