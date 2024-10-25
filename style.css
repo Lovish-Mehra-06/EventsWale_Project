@@ -43,12 +43,14 @@ body {
 /* Navigation bar styling */
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 10px;
   border-radius: 10px;
 }
+
+
 
 /* Navigation list styling */
 .ullist {
